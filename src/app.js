@@ -11,11 +11,13 @@ app.use(cors());
 app.use(express.json());
 
 app.post('/cart', (req, res)=>{
-    logger.info(req.body);
+    logger.info('Recebendo dados de carrinho abandonado ...');
+    console.log(req.body);
 });
 
 app.post('/recommendation', (req, res)=>{
-    logger.info(req.body);
+    logger.info('Recebendo retorno de dados ...');
+    console.log(req.body);
 });
 
 module.exports = app;

@@ -4,8 +4,6 @@ const morgan  = require('morgan');
 const dotenv  = require('dotenv').config();
 const logger  = require('./utils/logger');
 
-require('./database/connect');
-
 const app = express();
 
 app.use(morgan('tiny'));
